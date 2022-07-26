@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
+  flex-wrap: wrap;
+}
+
+
+.main{
+  padding: 40px 0;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  min-height: 400px;
+
+}
+
+.menu{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu h3{
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.menu a {
+  color: #16A2CA;
+  text-decoration: none;
+  border: 2px solid #16A2CA;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.form{
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 1rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.form h2{
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itens__form{
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.form input{
+  width: 40%;
+  height: 30px;
+  margin: 8px 0;
+}
+
+.itens__form [type=text]{
+  padding-left: 10px;
+}
+
+.form input[type=submit]{
+    border-radius: 40px 20px;
+    height: 40px;
+    background-color: #16A2CA;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 3px 5px 4px 2px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.conteudo__single{
+  width: 50%;
+  padding: 8px 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+      .itens__form [type=text]{
+        width: 100%;
+      }
+
+      .conteudo__single{
+        width: 100%;
+      }
+}
+
